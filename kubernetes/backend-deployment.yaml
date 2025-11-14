@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: springai21/user-app-demo
+          image: vishvapranav/user-app:latest
           env:
             - name: SPRING_DATASOURCE_URL
               value: jdbc:mysql://mysql-service:3306/testdb
@@ -23,4 +23,5 @@ spec:
             - name: SPRING_DATASOURCE_PASSWORD
               value: admin
           ports:
+
             - containerPort: 8080
